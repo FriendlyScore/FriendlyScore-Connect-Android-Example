@@ -22,7 +22,7 @@ android {
         
         
         resValue "string", "fs_client_id", (project.findProperty("FS_CLIENT_ID") ?: "NO_CLIENT_ID")
-        resValue "string", "fs_open_banking_scheme", (project.findProperty("FS_OBP_SCHEME") ?: "not.provided")
+        resValue "string", "fs_app_redirect_scheme", (project.findProperty("FS_OBP_SCHEME") ?: "not.provided")
 
     }
     buildTypes {
@@ -38,7 +38,7 @@ android {
 }
 
 dependencies {
-    api ('com.github.Friendlyscore.fs-android-sdk:friendlyscore-forecast:0.3'){
+    api ('com.github.Friendlyscore.fs-android-sdk:friendlyscore-forecast:0.4'){
         changing = true
     }
 

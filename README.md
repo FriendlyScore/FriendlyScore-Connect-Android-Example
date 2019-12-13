@@ -1,10 +1,13 @@
   # Overview
-
+  <p align="center">
+    <img src="device_2019_2_13_150355_framed.png" width="200" height="400" />
+  </p>
+  
   ## Products
 
   ### Products overview
 
- You need to [login](https://friendlyscore.com/login) to Customer panel and choose the right product configuration (Connect, Insights, Forecast) to have access to right User Journey and API endpoints. Please see products and details below.
+ You need to [login](https://friendlyscore.com/login) to Customer panel and choose the right product configuration (Connect, Insights, Forecast) to have access to the right User Journey and API endpoints. Please see products and details below.
 
 | product | Feature | Description |
 | :------ | :------ | :---------- |
@@ -22,8 +25,9 @@
   ## Introduction
 
   This guide provides the instructions to integrate FriendlyScore Android SDK [**Connect**](https://friendlyscore.com/login).
+
   You will want to [Sign-up](https://friendlyscore.com/login) and obtain your `client_id` to get started.
-  Clone this https://github.com/FriendlyScore/Open-Banking-Connect repository to get started quickly.
+
   ## Requirements
 
   - Install or update Android Studio to version 3.2 or greater
@@ -78,8 +82,8 @@
 
     #This value must be specified
     FS_CLIENT_ID=client_id
-    #Open Banking Scheme for Redirection to the app.
-    FS_OBP_SCHEME=not.provided
+    #You must specify the value the SDK will use for android:scheme to redirect back to your app. https://developer.android.com/training/app-links/deep-linking
+    FS_OBP_SCHEME=Please Provide this value.
 
 
   #### **Add the following values to your App Level build.gradle file(In the demo app/build.gradle)**
@@ -95,7 +99,7 @@
       defaultConfig {
         //Must Provide these Values
         resValue "string", "fs_client_id", (project.findProperty("FS_CLIENT_ID") ?: "NO_CLIENT_ID")
-        resValue "string", "fs_open_banking_scheme", (project.findProperty("FS_OBP_SCHEME") ?: "not.provided")
+        resValue "string", "fs_app_redirect_scheme", (project.findProperty("FS_OBP_SCHEME") ?: "NO_APP_REDIRECT_SCHEME_PROVIDED")
       }
     }
 
@@ -152,7 +156,6 @@ These environments are listed in the SDK as below
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
       super.onActivityResult(requestCode, resultCode, data);
       if(requestCode == REQUEST_CODE_FRIENDLY_SCORE){
-            
             //Present if there was error in creating an access token for the supplied userIdentifier.
             if(data!=null && data.hasExtra("userIdentifierAuthError")){
                 //Do Something
@@ -161,6 +164,12 @@ These environments are listed in the SDK as below
             if(data!=null && data.hasExtra("serviceDenied")){
                 if(data.hasExtra("serviceDeniedMessage")){
                     String errorDescription = data.getStringExtra("serviceDeniedMessage");
+                }
+            }
+            //Present if the configuration on the server is incomplete.
+            if(data!=null && data.hasExtra("incompleteConfiguration")){
+                if(data.hasExtra("incompleteConfigurationMessage")){
+                    String errorDescription = data.getStringExtra("incompleteConfigurationMessage");
                 }
             }
             //Present if there was error in obtaining configuration from server
@@ -183,6 +192,7 @@ These environments are listed in the SDK as below
 | -------------             | -------------|
 | userIdentifierAuthError   | Present if there was an authentication error for the supplied `userIdentifier`. 
 | serviceDenied             | Present if service was denied. Please check the description for more information.
+| incompleteConfiguration             | Present if the configuration on the server is incomplete. Please check the description for more information.
 | serverError               | Present if there was a critical error on the server.      
 
 ## Response State Definition

@@ -33,39 +33,12 @@
   - Install or update Android Studio to version 3.2 or greater
   - FriendlyScore `client_id`
   - We support Android 5.0 and above
-  - Jitpack Token to access the private SDK repository(Instructions are below)
 
   ## QuickStart
   The easiest way to get started is to clone the repository https://github.com/FriendlyScore/Open-Banking-Connect. Please follow the instructions below to provide the necessary configuration and to understand the flow.
 
   # **Getting Set up**
 
-  ### **Authentication**
-
-  We use jitpack to distribute our private Android SDK. 
-  
-  **1.** First please request access to https://github.com/FriendlyScore/fs-android-sdk.   
-  **2.** Go to this url https://jitpack.io/private#auth and authorise jitpack with your github account which has been given access to.
-
-  This will generate a token that is required to access the repository
-
-  #### Add the following values to your $HOME/.gradle/gradle.properties
-
-    authToken=your_jitpack_token
-
-
-  #### Add the following values to your Project Level build.gradle file
-  Include the Jitpack authentication token in your project level build.gradle file. Add `jitpack` to the list of repositories from where the FriendlyScore library will be included. You must add the refer the `authToken` in the previous steps by adding `credentials` required to access the library.
-
-    allprojects {
-       repositories {
-         ...
-         maven {
-            url "https://jitpack.io"
-            credentials { username authToken }
-            }
-        }
-    }
   #### Add the following values to your Project Level build.gradle file
   In your project-level Gradle file (build.gradle), add rules to include the Android Gradle plugin. The version should be equal to or greater than `3.2.1`
 
@@ -108,7 +81,7 @@
 
     dependencies {
        ...
-       implementation 'com.github.Friendlyscore.fs-android-sdk:friendlyscore-forecast:0.1'
+       implementation 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:0.7'
     }
 
   # **Integrating with FriendlyScore**
@@ -143,7 +116,7 @@ These environments are listed in the SDK as below
   Initiate FriendlyScoreView using the above values
 
     public void startFriendlyScore() {
-        FriendlyScoreView.Companion.startFriendlyScoreView(this, userIdentifier, REQUEST_CODE_FRIENDLY_SCORE, environment);
+                FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userIdentifier, REQUEST_CODE_FRIENDLY_SCORE, environment);
     }
 
 ## **Handle Response from FriendlyScore**

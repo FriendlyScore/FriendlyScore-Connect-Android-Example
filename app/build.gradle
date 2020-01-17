@@ -13,21 +13,25 @@ android {
         applicationId "com.demo.friendlyscore.connect"
         minSdkVersion 20
         targetSdkVersion 29
-        versionCode 1
+        versionCode 3
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         //Must Provide these Values
-        
-        
         resValue "string", "fs_client_id", (project.findProperty("FS_CLIENT_ID") ?: "NO_CLIENT_ID")
-        resValue "string", "fs_app_redirect_scheme", (project.findProperty("FS_OBP_SCHEME") ?: "not.provided")
+        resValue "string", "fs_app_redirect_scheme", (project.findProperty("FS_OBP_SCHEME") ?: "NO_APP_REDIRECT_SCHEME_PROVIDED")
 
     }
     buildTypes {
+        debug {
+            minifyEnabled true
+            //We use @Keep Annotations to preserve. When the library is built these are added to the default file proguard-android-optimize.txt
+            //Thus you can include these with `proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')`
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -38,9 +42,7 @@ android {
 }
 
 dependencies {
-    api ('com.github.Friendlyscore.fs-android-sdk:friendlyscore-forecast:0.4'){
-        changing = true
-    }
+    api ('com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:0.7')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

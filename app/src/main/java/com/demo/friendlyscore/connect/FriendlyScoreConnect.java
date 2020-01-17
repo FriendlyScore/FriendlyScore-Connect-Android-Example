@@ -14,17 +14,17 @@ import com.friendlyscore.ui.obp.FriendlyScoreView;
 
 public class FriendlyScoreConnect extends AppCompatActivity {
 
-    public String userIdentifier = "your_user_identifier";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_obp_start);
         startFriendlyScore();
     }
+    public String userIdentifier = "your_user_identifier";
 
     public final int REQUEST_CODE_FRIENDLY_SCORE = 11;
     public void startFriendlyScore() {
-        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userIdentifier, REQUEST_CODE_FRIENDLY_SCORE, Environments.PRODUCTION);
+        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userIdentifier, REQUEST_CODE_FRIENDLY_SCORE, Environments.SANDBOX);
     }
 
 

@@ -149,10 +149,6 @@ These environments are listed in the SDK as below
             if(data!=null && data.hasExtra("serverError")){
                 //Try again later
             }
-            //Present if the user completed the entire flow for Forecast
-            if(data!=null && data.hasExtra("userCompletedFlow")){
-                //Success
-            }
             // //Present if the user closed the flow
             if(data!=null && data.hasExtra("userClosedView")){
                 //The user closed the process
@@ -172,4 +168,3 @@ These environments are listed in the SDK as below
 | State                    | Definitions  | 
 | -------------             | -------------|
 | userClosedView            | Present if the user Closed the FriendlyScore Flow.      
-| userCompletedFlow         | Present if the user Completed the FriendlyScore flow.

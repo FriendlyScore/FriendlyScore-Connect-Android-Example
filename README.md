@@ -75,6 +75,7 @@
         resValue "string", "fs_app_redirect_scheme", (project.findProperty("FS_OBP_SCHEME") ?: "NO_APP_REDIRECT_SCHEME_PROVIDED")
       }
     }
+  # **Integrating with FriendlyScore**
 
   #### **Add FriendlyScore Android Framework to your app**
   In your module or app-level gradle file(In the demo `app/build.gradle`) please add the FriendlyScore Android SDK library listed below to your list of dependencies
@@ -84,8 +85,6 @@
        implementation 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:0.7'
     }
 
-  # **Integrating with FriendlyScore**
-  
   #### **Start FriendlyScore**
   In order to start FriendlyScore for your user you must have the `userIdentifier` for that user. The `userIdentifier` uniquely identifies the user in your systems. This `userIdentifier` can then be used to access information from the FriendlyScore [api](https://developers.friendlyscore.com). 
 
@@ -167,4 +166,4 @@ These environments are listed in the SDK as below
 ## Response State Definition
 | State                    | Definitions  | 
 | -------------             | -------------|
-| userClosedView            | Present if the user Closed the FriendlyScore Flow.      
+| userClosedView            | Present if the user Closed the FriendlyScore Flow.

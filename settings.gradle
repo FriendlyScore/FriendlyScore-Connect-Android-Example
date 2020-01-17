@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Open Banking Countries'
+rootProject.name='Open Banking Connect'

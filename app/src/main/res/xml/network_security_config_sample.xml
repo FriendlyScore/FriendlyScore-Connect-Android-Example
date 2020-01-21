@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <!--
+        FriendlyScore does not allow cleartext traffic.
+
+        In order to allow request please ensure <base-config> trusts `system` certificates.
+    -->
+    <base-config cleartextTrafficPermitted="false" >
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+
+    <!--
+        Additional specifications for your company domain can be specified under <domain-config>.
+    -->
+    <!--
+        <domain-config >
+            <domain includeSubdomains="true">
+                localhost
+            </domain>
+        </domain-config>
+     -->
+</network-security-config>

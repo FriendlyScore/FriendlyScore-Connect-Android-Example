@@ -19,19 +19,19 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         //Must Provide these Values
-        resValue "string", "fs_client_id", (project.findProperty("FS_CLIENT_ID") ?: "NO_CLIENT_ID")
-        resValue "string", "fs_app_redirect_scheme", (project.findProperty("FS_OBP_SCHEME") ?: "NO_APP_REDIRECT_SCHEME_PROVIDED")
+        resValue "string", "fs_client_id", (project.findProperty("CLIENT_ID") ?: "NO_CLIENT_ID")
+        resValue "string", "fs_app_redirect_scheme", (project.findProperty("APP_REDIRECT_SCHEME") ?: "NO_APP_REDIRECT_SCHEME_PROVIDED")
 
     }
     buildTypes {
         debug {
-            minifyEnabled true
+            minifyEnabled false
             //We use @Keep Annotations to preserve. When the library is built these are added to the default file proguard-android-optimize.txt
             //Thus you can include these with `proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')`
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

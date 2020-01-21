@@ -7,7 +7,7 @@
 
   Here you find instructions on how to integrate and use FriendlyScore Connect for Android.
 
-To get started quickly with FriendlyScore Connect for Android clone the [GitHub repository](https://github.com/FriendlyScore/Open-Banking-Connect) and run the example. You need to [Sign-up](https://friendlyscore.com/getting-started) for the free API keys through our Developer Console.
+To get started quickly with FriendlyScore Connect for Android clone the [GitHub repository](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example) and run the example. You need to [Sign-up](https://friendlyscore.com/getting-started) for the free API keys through our Developer Console.
 
   ## Requirements
 
@@ -17,14 +17,14 @@ To get started quickly with FriendlyScore Connect for Android clone the [GitHub 
 
   ## **Quickstart**
 
-The easiest way to get started is to clone the repository [GitHub repository](https://github.com/FriendlyScore/Open-Banking-Connect).
+The easiest way to get started is to clone the repository [GitHub repository](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example).
 
   ## **Getting Set up**
 
 Please follow the instructions below to install FriendlyScore Connect for Android, provide the necessary configuration and to understand the flow.
 
   #### Add the following values to your Project Level build.gradle file
-  In your project-level Gradle file (In the demo [build.gradle](https://github.com/FriendlyScore/Open-Banking-Connect/blob/master/build.gradle)), add rules to include the Android Gradle plugin. The version should be equal to or greater than `3.2.1`
+  In your project-level Gradle file (In the demo [build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/build.gradle)), add rules to include the Android Gradle plugin. The version should be equal to or greater than `3.2.1`
 
     buildscript {
         dependencies {
@@ -33,7 +33,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
     }
 
   #### Add the following values to your Project Level build.gradle file
-  In your project-level Gradle file (In the demo, [build.gradle](https://github.com/FriendlyScore/Open-Banking-Connect/blob/master/build.gradle)), add the Jitpack maven repository
+  In your project-level Gradle file (In the demo, [build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/build.gradle)), add the Jitpack maven repository
 
     allprojects {
       repositories {
@@ -42,7 +42,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
 	}
 
   #### **Add FriendlyScore Connect for Android to your app**
-  In your module or app-level gradle file(In the demo, [app/build.gradle](https://github.com/FriendlyScore/Open-Banking-Connect/blob/master/app/build.gradle)) please add the FriendlyScore Connect for Android listed below to your list of dependencies
+  In your module or app-level gradle file(In the demo, [app/build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/build.gradle)) please add the FriendlyScore Connect for Android listed below to your list of dependencies
 
     dependencies {
        api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:0.9'
@@ -53,7 +53,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
 
    You will also need your [Client Id](https://friendlyscore.com/company/keys) for the specific environment (SANDBOX, DEVELOPMENT, PRODUCTION).
 
-   In the project-level properties file (In the demo, [gradle.properties](https://github.com/FriendlyScore/Open-Banking-Connect/blob/master/gradle.properties))file please add the following configuration values.
+   In the project-level properties file (In the demo, [gradle.properties](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/gradle.properties))file please add the following configuration values.
 
     # Client Id value is specified in the keys section of the developer console.
     # Use the Client Id for the correct ENVIRONMENT.
@@ -65,7 +65,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
 
     APP_REDIRECT_SCHEME=app_redirect_scheme
 
-  #### **Add the following values to your App Level build.gradle file(In the demo, [app/build.gradle](https://github.com/FriendlyScore/Open-Banking-Connect/blob/master/app/build.gradle))**
+  #### **Add the following values to your App Level build.gradle file(In the demo, [app/build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/build.gradle))**
   Now we must read the configuration to create the string resources that will be used by the FriendlyScore Connect for Android.
 
     android {
@@ -82,7 +82,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
 
 
   #### **Initialize FriendlyScore Connect**
-  The code described below is from the file in the demo [FriendlyScoreConnect.java](https://github.com/FriendlyScore/Open-Banking-Connect/blob/master/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnect.java)
+  The code described below is from the file in the demo [FriendlyScoreConnect.java](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnect.java)
 
 
   You can select which environment you want to use the FriendlyScore SDK
@@ -116,7 +116,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
     }
 
 ## **Handle Response from FriendlyScore**
-The code described below is from the file in the demo [FriendlyScoreConnect.java](https://github.com/FriendlyScore/Open-Banking-Connect/blob/master/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnect.java)
+The code described below is from the file in the demo [FriendlyScoreConnect.java](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnect.java)
 
   The `onActivityResult` is called when the FriendlyScore Connect for Android is closed. The `data` object returned `onActivityResult` can contain both `errors` & `states`.
 

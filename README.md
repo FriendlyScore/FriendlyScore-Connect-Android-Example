@@ -50,7 +50,7 @@
     }  
   ### **FriendlyScore Configuration**
    
-   #### **Add FriendlyScore Android Framework configuration to your app**
+   #### **Add FriendlyScore Connect Framework configuration to your app**
    In the project-level gradle.properties file please add the following configuration values
 
     #This value must be specified
@@ -77,7 +77,7 @@
     }
   # **Integrating with FriendlyScore**
 
-  #### **Add FriendlyScore Android Framework to your app**
+  #### **Add FriendlyScore Connect Framework to your app**
   In your module or app-level gradle file(In the demo `app/build.gradle`) please add the FriendlyScore Android SDK library listed below to your list of dependencies
 
     dependencies {

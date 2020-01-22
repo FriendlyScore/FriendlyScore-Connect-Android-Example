@@ -52,15 +52,18 @@ public class FriendlyScoreConnect extends AppCompatActivity {
                 //Present if there was service denied.
                 if( data.hasExtra("serviceDenied")){
                     if(data.hasExtra("serviceDeniedMessage")){
-                        Log.e(TAG, "serviceDeniedMessage");
                         String serviceDeniedMessage = data.getStringExtra("serviceDeniedMessage");
+                        if(serviceDeniedMessage!=null)
+                            Log.e(TAG, serviceDeniedMessage);
+
                     }
                 }
                 //Present if the configuration on the server is incomplete.
                 if(data!=null && data.hasExtra("incompleteConfiguration")){
                     if(data.hasExtra("incompleteConfigurationMessage")){
-                        Log.e(TAG, "incompleteConfigurationMessage");
                         String errorDescription = data.getStringExtra("incompleteConfigurationMessage");
+                        if(errorDescription!=null)
+                            Log.e(TAG, errorDescription);
                     }
                 }
                 //Present if there was error in obtaining configuration from server

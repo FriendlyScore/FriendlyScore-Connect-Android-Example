@@ -26,28 +26,31 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
   #### Add the following values to your Project Level build.gradle file
   In your project-level Gradle file (In the demo [build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/build.gradle)), add rules to include the Android Gradle plugin. The version should be equal to or greater than `3.2.1`
 
+```groovy
     buildscript {
         dependencies {
             classpath 'com.android.tools.build:gradle:3.2.1'
         }
     }
-
+  ```
   #### Add the following values to your Project Level build.gradle file
   In your project-level Gradle file (In the demo, [build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/build.gradle)), add the Jitpack maven repository
 
+```groovy
     allprojects {
       repositories {
         maven { url 'https://jitpack.io' } // Include to import FriendlyScore Connect dependencies
       }
 	}
-
+```
   #### **Add FriendlyScore Connect for Android to your app**
   In your module or app-level gradle file(In the demo, [app/build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/build.gradle)) please add the FriendlyScore Connect for Android listed below to your list of dependencies
 
+```groovy
     dependencies {
        api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:0.9'
     }
-
+```
    #### **Add FriendlyScore Connect for Android configuration to your app**
    Go to the [Redirects](https://friendlyscore.com/company/redirects) section of the FriendlyScore developer console and provide your `App Package Id` and `App Redirect Scheme`.
 
@@ -68,6 +71,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
   #### **Add the following values to your App Level build.gradle file(In the demo, [app/build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/build.gradle))**
   Now we must read the configuration to create the string resources that will be used by the FriendlyScore Connect for Android.
 
+ ```groovy
     android {
       compileOptions {
       sourceCompatibility 1.8
@@ -80,18 +84,20 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
       }
     }
 
-
+```
   #### **Initialize FriendlyScore Connect**
   The code described below is from the file in the demo [FriendlyScoreConnect.java](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnect.java)
 
 
-  You can select which environment you want to use the FriendlyScore SDK
+  You can select which environment you want to use
 
   | Environment  |   Description   |
 | :----       | :--             |
 | Environments.SANDBOX     | Use this environment to test your integration with Unlimited API Calls |
 | Environments.DEVELOPMENT | Use this your environment to test your integration with live but limited Production API Calls |
 | Environments.PRODUCTION  | Production API environment |
+
+```java
 
     public class FriendlyScoreConnect extends AppCompatActivity {
 
@@ -114,14 +120,13 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
     public void startFriendlyScore() {
         FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userIdentifier, REQUEST_CODE_FRIENDLY_SCORE, Environments.SANDBOX);
     }
-
+```
 ## **Handle Response from FriendlyScore**
 The code described below is from the file in the demo [FriendlyScoreConnect.java](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnect.java)
 
   The `onActivityResult` is called when the FriendlyScore Connect for Android is closed. The `data` object returned `onActivityResult` can contain both `errors` & `states`.
 
-
-
+```java
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
       super.onActivityResult(requestCode, resultCode, data);
@@ -152,7 +157,7 @@ The code described below is from the file in the demo [FriendlyScoreConnect.java
             }
         }
     }
-
+```
 ## Error Definition
 | Error                     | Definitions  |
 | -------------             | -------------|

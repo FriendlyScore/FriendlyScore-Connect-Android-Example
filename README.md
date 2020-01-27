@@ -1,7 +1,3 @@
-  ## Overview
-  <p align="center">
-    <img src="https://dpcnl9aeuvod8.cloudfront.net/docs_assets/device_2019_2_13_150355_framed.png" width="200" height="400" />
-  </p>
 
   ## Introduction
 
@@ -19,7 +15,7 @@ To get started quickly with FriendlyScore Connect for Android clone the [GitHub 
 
 The easiest way to get started is to clone the repository [GitHub repository](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example).
 
-  ## **Getting Set up**
+  ## **Installation**
 
 Please follow the instructions below to install FriendlyScore Connect for Android, provide the necessary configuration and to understand the flow.
 

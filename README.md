@@ -48,7 +48,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
 
 ```groovy
     dependencies {
-       api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0'
+       api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.0'
     }
 ```
    #### **Add FriendlyScore Connect for Android configuration to your app**

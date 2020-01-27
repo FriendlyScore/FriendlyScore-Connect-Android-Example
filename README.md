@@ -48,7 +48,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
 
 ```groovy
     dependencies {
-       api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:0.9'
+       api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0'
     }
 ```
    #### **Add FriendlyScore Connect for Android configuration to your app**
@@ -104,7 +104,8 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_obp_start);
+        setContentView(R.layout.activity_friendlyscore_connect_layout);
+        //Call this function from the listener of a View click
         startFriendlyScore();
     }
     /**
@@ -125,6 +126,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
 The code described below is from the file in the demo [FriendlyScoreConnect.java](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnect.java)
 
   The `onActivityResult` is called when the FriendlyScore Connect for Android is closed. The `data` object returned `onActivityResult` can contain both `errors` & `states`.
+
 
 ```java
     @Override

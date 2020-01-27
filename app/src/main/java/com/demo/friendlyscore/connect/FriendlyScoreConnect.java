@@ -3,9 +3,11 @@ package com.demo.friendlyscore.connect;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.friendlyscore.base.Environments;
 import com.friendlyscore.ui.obp.FriendlyScoreView;
@@ -14,11 +16,18 @@ import com.friendlyscore.ui.obp.FriendlyScoreView;
 public class FriendlyScoreConnect extends AppCompatActivity {
 
     public String TAG = FriendlyScoreConnect.class.getSimpleName();
+    AppCompatButton initiateFriendlyScore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friendlyscore_connect_layout);
-        startFriendlyScore();
+        initiateFriendlyScore = (AppCompatButton)findViewById(R.id.initiate_friendlyscore_connect);
+        initiateFriendlyScore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startFriendlyScore();
+            }
+        });
     }
     /**
      In order to initialize FriendlyScore for your user you must have the `userIdentifier` for that user.

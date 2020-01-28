@@ -1,13 +1,14 @@
-## Android SDK
-
+# Android SDK
 
 ## Overview
+
+### Introduction
 
 Here you can find instructions on how to integrate and use FriendlyScore Connect for Android.
 
 To get started quickly with FriendlyScore Connect for Android, clone the [GitHub repository](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example) and run the example. You need to [sign-up](https://friendlyscore.com/getting-started) for the free API keys through our Developer Console.
 
-## Requirements
+### Requirements
 
 - Install or update Android Studio version 3.2 or greater
 - Android 5.0 and greater
@@ -88,7 +89,7 @@ android {
 }
 ```
 
-## Initialise FriendlyScore Connect
+## Initialize SDK
 
 The code described below is from the file in the demo [FriendlyScoreConnect.java](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnect.java).
 
@@ -125,7 +126,7 @@ public void startFriendlyScore() {
     FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.SANDBOX);
 }
 ```
-## Handle Response from FriendlyScore
+## Handle Response
 
 The code described below is from the file in the demo [FriendlyScoreConnect.java](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnect.java).
 

@@ -34,7 +34,7 @@ public class FriendlyScoreConnect extends AppCompatActivity {
      The `userReference` uniquely identifies the user in your systems.
      This `userReference` can then be used to access information from the FriendlyScore [api](https://friendlyscore.com/developers/api).
      */
-    public String userReference = "your_user_identifier";
+    public String userReference = "your_user_reference";
 
     /**
      In order to listen when the user returns from the FriendlyScoreView in your `onActivityResult`, you must provide the `requestcode` that you will be using.

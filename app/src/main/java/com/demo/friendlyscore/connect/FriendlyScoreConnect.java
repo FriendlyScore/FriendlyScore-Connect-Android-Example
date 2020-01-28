@@ -30,11 +30,11 @@ public class FriendlyScoreConnect extends AppCompatActivity {
         });
     }
     /**
-     In order to initialize FriendlyScore for your user you must have the `userIdentifier` for that user.
-     The `userIdentifier` uniquely identifies the user in your systems.
-     This `userIdentifier` can then be used to access information from the FriendlyScore [api](https://friendlyscore.com/developers/api).
+     In order to initialize FriendlyScore for your user you must have the `userReference` for that user.
+     The `userReference` uniquely identifies the user in your systems.
+     This `userReference` can then be used to access information from the FriendlyScore [api](https://friendlyscore.com/developers/api).
      */
-    public String userIdentifier = "your_user_identifier";
+    public String userReference = "your_user_identifier";
 
     /**
      In order to listen when the user returns from the FriendlyScoreView in your `onActivityResult`, you must provide the `requestcode` that you will be using.
@@ -42,7 +42,7 @@ public class FriendlyScoreConnect extends AppCompatActivity {
     public final int REQUEST_CODE_FRIENDLY_SCORE = 11;
 
     public void startFriendlyScore() {
-        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userIdentifier, REQUEST_CODE_FRIENDLY_SCORE, Environments.SANDBOX);
+        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.SANDBOX);
     }
 
 
@@ -52,9 +52,9 @@ public class FriendlyScoreConnect extends AppCompatActivity {
         if(requestCode == REQUEST_CODE_FRIENDLY_SCORE){
             if(data!=null){
 
-                //Present if there was error in creating an access token for the supplied userIdentifier.
-                if(data.hasExtra("userIdentifierAuthError")){
-                    Log.e(TAG, "userIdentifierAuthError");
+                //Present if there was error in creating an access token for the supplied userReference.
+                if(data.hasExtra("userReferenceAuthError")){
+                    Log.e(TAG, "userReferenceAuthError");
                     //Do Something
                 }
 

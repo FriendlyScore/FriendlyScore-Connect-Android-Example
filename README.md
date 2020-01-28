@@ -44,7 +44,7 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
 
 ```groovy
     dependencies {
-       api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.0'
+       api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.1'
     }
 ```
    #### **Add FriendlyScore Connect for Android configuration to your app**
@@ -105,17 +105,17 @@ Please follow the instructions below to install FriendlyScore Connect for Androi
         startFriendlyScore();
     }
     /**
-      In order to initialize FriendlyScore for your user you must have the `userIdentifier` for that user. The `userIdentifier` uniquely identifies the user in your systems.
-      This `userIdentifier` can then be used to access information from the FriendlyScore [api](https://friendlyscore.com/developers/api).
+      In order to initialize FriendlyScore for your user you must have the `userReference` for that user. The `userReference` is an alphanumeric string that uniquely identifies the user in your systems.
+      This `userReference` can then be used to access information from the FriendlyScore [api](https://friendlyscore.com/developers/api).
     */
-    public String userIdentifier = "your_user_identifier";
+    public String userReference = "your_user_reference";
 
     /**
       In order to listen when the user returns from the FriendlyScoreView in your `onActivityResult`, you must provide the `requestcode` that you will be using
     */
     public final int REQUEST_CODE_FRIENDLY_SCORE = 11;
     public void startFriendlyScore() {
-        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userIdentifier, REQUEST_CODE_FRIENDLY_SCORE, Environments.SANDBOX);
+        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.SANDBOX);
     }
 ```
 ## **Handle Response from FriendlyScore**
@@ -129,8 +129,8 @@ The code described below is from the file in the demo [FriendlyScoreConnect.java
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
       super.onActivityResult(requestCode, resultCode, data);
       if(requestCode == REQUEST_CODE_FRIENDLY_SCORE){
-            //Present if there was error in creating an access token for the supplied userIdentifier.
-            if(data!=null && data.hasExtra("userIdentifierAuthError")){
+            //Present if there was error in creating an access token for the supplied userReference.
+            if(data!=null && data.hasExtra("userReferenceAuthError")){
                 //Do Something
             }
             //Present if there was service denied.
@@ -159,7 +159,7 @@ The code described below is from the file in the demo [FriendlyScoreConnect.java
 ## Error Definition
 | Error                     | Definitions  |
 | -------------             | -------------|
-| userIdentifierAuthError   | Present if there was an authentication error for the supplied `userIdentifier`.
+| userReferenceAuthError   | Present if there was an authentication error for the supplied `userReference`.
 | serviceDenied             | Present if service was denied. Please check the description for more information.
 | incompleteConfiguration   | Present if the configuration on the server is incomplete. Please check the description for more information.
 | serverError               | Present if there was a critical error on the server.

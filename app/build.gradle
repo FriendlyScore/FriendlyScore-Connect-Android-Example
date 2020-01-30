@@ -10,7 +10,7 @@ android {
         applicationId "com.demo.friendlyscore.connect"
         minSdkVersion 20
         targetSdkVersion 29
-        versionCode 3
+        versionCode 4
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-    api ('com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.2')
+    api ('com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.3')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

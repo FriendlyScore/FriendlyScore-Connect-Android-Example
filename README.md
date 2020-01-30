@@ -69,7 +69,7 @@ In your module or app-level Gradle file (you can find an example in the demo, [a
 
 ```groovy
 dependencies {
-   api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.3'
+   api 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:latest.release'
 }
 ```
 

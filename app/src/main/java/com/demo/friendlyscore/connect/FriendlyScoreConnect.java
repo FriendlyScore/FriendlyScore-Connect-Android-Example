@@ -42,7 +42,7 @@ public class FriendlyScoreConnect extends AppCompatActivity {
     public final int REQUEST_CODE_FRIENDLY_SCORE = 11;
 
     public void startFriendlyScore() {
-        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.SANDBOX);
+        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.PRODUCTION);
     }
 
 

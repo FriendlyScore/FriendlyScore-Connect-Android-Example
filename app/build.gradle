@@ -36,10 +36,11 @@ android {
         sourceCompatibility 1.8
         targetCompatibility 1.8
     }
+
 }
 
 dependencies {
-    api ('com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.7')
+    api ('com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.8')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

@@ -8,4 +8,93 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CustomConnectLightTheme" parent="ConnectLightTheme">
+        <item name="connectBackgroundColor" >#FFFFFF</item>
+        <item name="connectConsentHeadingColor" >#2B2B2B</item>
+        <item name="connectConsentItemColor" >#999999</item>
+        <item name="connectConsentDividerColor" >#F4F4F4</item>
+        <item name="connectBankItemBackgroundColor">#FFFFFF</item>
+        <item name="connectBankItemTextColor">#2B2B2B</item>
+        <item name="connectBankItemDisabledTextColor">#332B2B2B</item>
+        <item name="connectToolbarIconsColor">#484848</item>
+        <item name="backgroundColor">#FFFFFF</item>
+        <item name="toolbarItemsColor">#484848</item>
+        <item name="connectBankItemBorderColor">#EBEBEB</item>
+        <item name="connectBankConsentItemHeading">#595959</item>
+        <item name="connectBankConsentItemSubHeading">#999999</item>
+        <item name="connectBankConsentTopHeading">#000000</item>
+        <item name="connectBankMainTextColor">#000000</item>
+        <item name="connectConsentDisclaimerColor">#A4A4A4</item>
+        <item name="connectCancelButtonColor" >#A4A4A4</item>
+        <item name="connectNextButtonColor" >#21BBAB</item>
+        <item name="connectButtonTextColor">#A4A4A4</item>
+        <item name="connectFilterIconColor" >#7038A7</item>
+        <item name="connectFilterButtonColor" >#7038A7</item>
+        <item name="connectFilterButtonDisabledColor" >#A4A4A4</item>
+        <item name="connectFilterItemHeadingColor" >#9D9D9D</item>
+        <item name="connectFilterItemSubHeadingColor">#484848</item>
+
+        <item name="connectFilterPageTitleColor" >#262626</item>
+        <item name="connectFilterPageSubTitleColor">#757575</item>
+
+        <item name="connectErrorTextColor">#000000</item>
+
+        <item name="connectBankDetailMarkerColor">#21BBAB</item>
+        <item name="connectBankDetailDisconnectButtonColor"> #D3D3D3</item>
+
+
+        <item name="connectFilterPopupTitleColor">#484848</item>
+        <item name="connectFilterPopupItemColor">#484848</item>
+        <item name="connectedBankItemConnectedStatusTickColor">#FFFFFF</item>
+        <item name="connectedBankItemConnectedStatusColor">#11C0AE</item>
+        <item name="connectBankItemUnauthorizedStatusForegroundColor">#E24A4A</item>
+        <item name="connectBankItemUnauthorizedStatusBackgroundColor">#E24A4A</item>
+        <item name="connectBankItemUnavailableStatusColor">#DA3529</item>
+        <item name="buttonTextColor">#FFFFFF</item>
+    </style>
+
+    <style name="CustomConnectDarkTheme" parent="ConnectDarkTheme">
+        <item name="backgroundColor">#020202</item>
+        <item name="connectBackgroundColor" >#020202</item>
+        <item name="connectConsentHeadingColor" >#FFFFFF</item>
+        <item name="connectConsentItemColor" >#999999</item>
+        <item name="connectConsentDividerColor" >#333333</item>
+        <item name="connectBankItemBackgroundColor">#191919</item>
+        <item name="connectToolbarIconsColor">#A0A7B1</item>
+        <item name="connectBankItemTextColor">#FFFFFF</item>
+        <item name="connectBankItemDisabledTextColor">#33FFFFFF</item>
+        <item name="toolbarItemsColor">#A0A7B1</item>
+        <item name="connectBankItemBorderColor">#333333</item>
+        <item name="connectBankConsentItemHeading">#FFFFFF</item>
+        <item name="connectBankConsentItemSubHeading">#999999</item>
+        <item name="connectBankConsentTopHeading">#F9FAFC</item>
+        <item name="connectBankMainTextColor">#FFFFFF</item>
+        <item name="connectConsentDisclaimerColor">#A4A4A4</item>
+        <item name="connectCancelButtonColor">#333333</item>
+        <item name="connectNextButtonColor" >#21BBAB</item>
+        <item name="connectButtonTextColor" >#FFFFFF</item>
+        <item name="connectFilterIconColor" >#7038A7</item>
+        <item name="connectFilterButtonColor" >#7038A7</item>
+        <item name="connectFilterButtonDisabledColor" >#33FFFFFF</item>
+        <item name="connectFilterItemHeadingColor" >#9D9D9D</item>
+        <item name="connectFilterItemSubHeadingColor">#FFFFFF</item>
+
+        <item name="connectFilterPageTitleColor" >#FFFFFF</item>
+        <item name="connectFilterPageSubTitleColor">#757575</item>
+
+        <item name="connectErrorTextColor">#FFFFFF</item>
+
+        <item name="connectBankDetailMarkerColor">#21BBAB</item>
+        <item name="connectBankDetailDisconnectButtonColor">#333333</item>
+
+        <item name="connectFilterPopupTitleColor">#FFFFFF</item>
+        <item name="connectFilterPopupItemColor">#FFFFFF</item>
+        <item name="connectedBankItemConnectedStatusTickColor">#FFFFFF</item>
+        <item name="connectedBankItemConnectedStatusColor">#11C0AE</item>
+        <item name="connectBankItemUnauthorizedStatusForegroundColor">#E24A4A</item>
+        <item name="connectBankItemUnauthorizedStatusBackgroundColor">#E24A4A</item>
+        <item name="connectBankItemUnavailableStatusColor">#DA3529</item>
+        <item name="buttonTextColor">#FFFFFF</item>
+    </style>
+
 </resources>

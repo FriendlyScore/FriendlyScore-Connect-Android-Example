@@ -41,8 +41,16 @@ public class FriendlyScoreConnect extends AppCompatActivity {
      */
     public final int REQUEST_CODE_FRIENDLY_SCORE = 11;
 
+    /**
+     Create the theme variable that you want to use for the ConnectUi
+     */
+    public final int connectUITheme = R.style.CustomConnectLightTheme;
+
+
+
     public void startFriendlyScore() {
-        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.PRODUCTION);
+
+        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.PRODUCTION, connectUITheme);
     }
 
 

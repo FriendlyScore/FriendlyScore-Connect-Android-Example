@@ -51,7 +51,7 @@ public class FriendlyScoreConnect extends AppCompatActivity {
         Show Only Icon for Back Button
 
     */
-    Boolean showOnlyIconBackButton = true;
+    Boolean showOnlyIconBackButton = false;
 
     /**
        Text Label for Back Button

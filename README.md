@@ -62,7 +62,7 @@
 
     dependencies {
        ...
-       implementation 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.19'
+       implementation 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.20'
     }
 
   # **Integrating with FriendlyScore**

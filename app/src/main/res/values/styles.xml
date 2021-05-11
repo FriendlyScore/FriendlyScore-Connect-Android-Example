@@ -15,10 +15,7 @@
         <item name="connectConsentDividerColor" >#F4F4F4</item>
         <item name="connectBankItemBackgroundColor">#FFFFFF</item>
         <item name="connectBankItemTextColor">#2B2B2B</item>
-        <item name="connectBankItemDisabledTextColor">#332B2B2B</item>
         <item name="connectToolbarIconsColor">#484848</item>
-        <item name="backgroundColor">#FFFFFF</item>
-        <item name="toolbarItemsColor">#484848</item>
         <item name="connectBankItemBorderColor">#EBEBEB</item>
         <item name="connectBankConsentItemHeading">#595959</item>
         <item name="connectBankConsentItemSubHeading">#999999</item>
@@ -26,8 +23,8 @@
         <item name="connectBankMainTextColor">#000000</item>
         <item name="connectConsentDisclaimerColor">#A4A4A4</item>
         <item name="connectCancelButtonColor" >#A4A4A4</item>
-        <item name="connectNextButtonColor" >#21BBAB</item>
-        <item name="connectButtonTextColor">#A4A4A4</item>
+        <item name="connectNextButtonColor" >#7038A7</item>
+        <item name="connectButtonTextColor">#FFFFFF</item>
         <item name="connectFilterIconColor" >#7038A7</item>
         <item name="connectFilterButtonColor" >#7038A7</item>
         <item name="connectFilterButtonDisabledColor" >#A4A4A4</item>
@@ -39,7 +36,7 @@
 
         <item name="connectErrorTextColor">#000000</item>
 
-        <item name="connectBankDetailMarkerColor">#21BBAB</item>
+        <item name="connectBankDetailMarkerColor">#7038A7</item>
         <item name="connectBankDetailDisconnectButtonColor"> #D3D3D3</item>
 
 
@@ -50,11 +47,16 @@
         <item name="connectBankItemUnauthorizedStatusForegroundColor">#E24A4A</item>
         <item name="connectBankItemUnauthorizedStatusBackgroundColor">#E24A4A</item>
         <item name="connectBankItemUnavailableStatusColor">#DA3529</item>
-        <item name="buttonTextColor">#FFFFFF</item>
+        <item name="connectBankItemDisabledTextColor">#332B2B2B</item>
+        <item name="connectNavigationButtonBackgroundColor">#EBEBEB</item>
+        <item name="connectToolbarDividerColor">#332B2B2B</item>
+        <item name="connectNavigationBackButtonItems">#000000</item>
+        <item name="connectToolbarSearchTextColor">#484848</item>
+        <item name="connectToolbarTextColor">#000000</item>
+        <item name="connectToolbarSearchCursorColor">#332B2B2B</item>
     </style>
 
     <style name="CustomConnectDarkTheme" parent="ConnectDarkTheme">
-        <item name="backgroundColor">#020202</item>
         <item name="connectBackgroundColor" >#020202</item>
         <item name="connectConsentHeadingColor" >#FFFFFF</item>
         <item name="connectConsentItemColor" >#999999</item>
@@ -71,7 +73,7 @@
         <item name="connectBankMainTextColor">#FFFFFF</item>
         <item name="connectConsentDisclaimerColor">#A4A4A4</item>
         <item name="connectCancelButtonColor">#333333</item>
-        <item name="connectNextButtonColor" >#21BBAB</item>
+        <item name="connectNextButtonColor" >#7038A7</item>
         <item name="connectButtonTextColor" >#FFFFFF</item>
         <item name="connectFilterIconColor" >#7038A7</item>
         <item name="connectFilterButtonColor" >#7038A7</item>
@@ -84,7 +86,7 @@
 
         <item name="connectErrorTextColor">#FFFFFF</item>
 
-        <item name="connectBankDetailMarkerColor">#21BBAB</item>
+        <item name="connectBankDetailMarkerColor">#7038A7</item>
         <item name="connectBankDetailDisconnectButtonColor">#333333</item>
 
         <item name="connectFilterPopupTitleColor">#FFFFFF</item>
@@ -94,7 +96,12 @@
         <item name="connectBankItemUnauthorizedStatusForegroundColor">#E24A4A</item>
         <item name="connectBankItemUnauthorizedStatusBackgroundColor">#E24A4A</item>
         <item name="connectBankItemUnavailableStatusColor">#DA3529</item>
-        <item name="buttonTextColor">#FFFFFF</item>
+        <item name="connectNavigationButtonBackgroundColor">#A0A7B1</item>
+        <item name="connectToolbarDividerColor">#33FFFFFF</item>
+        <item name="connectNavigationBackButtonItems">#000000</item>
+        <item name="connectToolbarSearchTextColor">#FFFFFF</item>
+        <item name="connectToolbarTextColor">#FFFFFF</item>
+        <item name="connectToolbarSearchCursorColor">#999999</item>
     </style>
 
 </resources>

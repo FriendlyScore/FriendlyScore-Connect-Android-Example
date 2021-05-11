@@ -47,10 +47,27 @@ public class FriendlyScoreConnect extends AppCompatActivity {
     public final int connectUITheme = R.style.CustomConnectLightTheme;
 
 
+    /**
+        Show Only Icon for Back Button
+
+    */
+    Boolean showOnlyIconBackButton = true;
+
+    /**
+       Text Label for Back Button
+
+    */
+    String backButtonLabel = "Back";
+
+    /**
+            Force App to start with Browser flow (Default set to browser flow)
+
+    */
+    Boolean forceBrowserFlow = false;
 
     public void startFriendlyScore() {
 
-        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.PRODUCTION, connectUITheme);
+        FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.PRODUCTION, connectUITheme, showOnlyIconBackButton, backButtonLabel, forceBrowserFlow);
     }
 
 

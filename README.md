@@ -62,7 +62,7 @@
 
     dependencies {
        ...
-       implementation 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.18'
+       implementation 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.19'
     }
 
   # **Integrating with FriendlyScore**
@@ -119,10 +119,37 @@ The existing themes for `Connect` are declared below
     int connectUITheme = R.style.ConnectLightTheme
 
 ```
+
+```java
+    /**
+        Show Only Icon for Back Button
+
+    */
+    Boolean showOnlyIconBackButton = false
+
+```
+
+```java
+    /**
+       Text Label for Back Button
+
+    */
+    String backButtonLabel = "Back"
+
+```
+
+```java
+    /**
+            Force App to start with Browser flow (Default set to browser flow)
+
+    */
+        Boolean forceBrowserFlow = false
+
+```
   Initiate FriendlyScoreView using the above values
 
     public void startFriendlyScore() {
-                FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userIdentifier, REQUEST_CODE_FRIENDLY_SCORE, environment, connectUITheme);
+                FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userIdentifier, REQUEST_CODE_FRIENDLY_SCORE, environment, connectUITheme, showOnlyIconBackButton, backButtonLabel, forceBrowserFlow);
     }
 
 ## **Handle Response from FriendlyScore**

@@ -108,7 +108,7 @@ You must extend the Default theme while creating the custom theme
 
 
     <style name="CustomConnectDarkTheme" parent="ConnectDarkTheme">
-      
+
     </style>
 
 
@@ -127,14 +127,13 @@ The existing themes for `Connect` are declared below
     /**
         Show Only Icon for Back Button
     */
-
     public Boolean showOnlyIconBackButton = false
 
     /**
        Text Label for Back Button
     */
     public String backButtonLabel = "Back"
-
+    
     /**
             Force App to start with Browser flow (Default set to browser flow)
     */

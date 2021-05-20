@@ -78,10 +78,10 @@
 
   You can select which environment you want to use the FriendlyScore SDK
 
-  | Environment  |   Description   |
-    | :----       | :--             |
-    | sandbox     | Use this environment to test your integration with Unlimited API Calls |
-    | production  | Production API environment |
+  | Environment |   Description |
+  | :----       | :--             |
+  | sandbox     | Use this environment to test your integration with Unlimited API Calls |
+  | production  | Production API environment |
 
 These environments are listed in the SDK as below
 
@@ -93,7 +93,7 @@ These environments are listed in the SDK as below
     public Environments environment = Environments.PRODUCTION;
 
 ### Theme
-FriendlyScoreFinanceManager can be presented with light (default) or dark theme, with are predefined list of colors and icons.
+FriendlyScoreConnect can be presented with light (default) or dark theme, with are predefined list of colors and icons.
 
 To use custom colors for the categories, you must override the color keys in your application.
 
@@ -103,11 +103,12 @@ Custom theme examples is included in the [styles.xml](https://github.com/Friendl
 
 You must extend the Default theme while creating the custom theme
 
-```
+
     <style name="CustomConnectDarkTheme" parent="ConnectDarkTheme">
 
     </style>
-```
+
+
 The existing themes for `Connect` are declared below
 
 ```
@@ -120,24 +121,18 @@ The existing themes for `Connect` are declared below
 
 ```
 
-``
     /**
         Show Only Icon for Back Button
-
     */
+
     public Boolean showOnlyIconBackButton = false
 
 
-
-
-    /**
+    /**`
        Text Label for Back Button
 
     */
     public String backButtonLabel = "Back"
-
-
-
 
     /**
             Force App to start with Browser flow (Default set to browser flow)
@@ -145,18 +140,14 @@ The existing themes for `Connect` are declared below
     */
     public Boolean forceBrowserFlow = false
 
+
 Initiate FriendlyScoreView using the above values
-
-```
-
-
-
 
     public void startFriendlyScore() {
                 FriendlyScoreView.Companion.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, environment, connectUITheme, showOnlyIconBackButton, backButtonLabel, forceBrowserFlow);
     }
 
-```
+
 
 ### Colors
 

@@ -92,14 +92,16 @@ These environments are listed in the SDK as below
 
     public Environments environment = Environments.PRODUCTION;
 
-### Theme
+### Customization
+
+#### Theme
 FriendlyScoreConnect can be presented with light (default) or dark theme, with are predefined list of colors and icons.
 
 To use custom colors for the categories, you must override the color keys in your application.
 
 You can also create a custom theme and use that value when you trigger the `ConnectUI`.
 
-Custom theme examples is included in the [styles.xml](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/src/main/res/values/styles.xml)
+Custom theme examples is included in the [styles.xml](https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example/blob/master/app/src/main/res/values/styles.xml). The color keys and descriptions are in the `Colors`section.
 
 You must extend the Default theme while creating the custom theme
 
@@ -121,6 +123,7 @@ The existing themes for `Connect` are declared below
 
 ```
 
+#### Other
     /**
         Show Only Icon for Back Button
     */

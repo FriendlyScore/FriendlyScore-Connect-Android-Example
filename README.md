@@ -5,7 +5,7 @@
 
 ## Introduction
 
-  This guide provides the instructions to integrate FriendlyScore Android SDK [**Connect**](https://friendlyscore.com/login).
+  This guide provides the instructions to integrate FriendlyScore Android SDK Connect.
 
   You will want to [Sign-up](https://friendlyscore.com/login) and obtain your `client_id` to get started.
 
@@ -239,3 +239,15 @@ The `onActivityResult` is called when the SDK is closed. The `data` object retur
 | -------------             | -------------|
 | userClosedView            | Present if the user Closed the FriendlyScore Flow.      
 | userCompletedFlow         | Present if the user Completed the FriendlyScore flow.
+
+## Next Steps
+
+### Access to Production Environment
+
+You can continue to integrate FriendlyScore Connect in your app in our sandbox environment. Once you have completed testing, you can request access to the production environment in the developer console or speak directly to your account manager.
+
+### Support 
+
+Find commonly asked questions and answers in our [F.A.Q](https://friendlyscore.com/developers/faq). You can also contact us via email at [developers@friendlyscore.com](mailto:developers@friendlyscore.com) or speak directly with us on LiveChat.
+
+You can find all the code for FriendlyScore Connect for Web component, iOS and Android on our [GitHub](https://github.com/FriendlyScore).

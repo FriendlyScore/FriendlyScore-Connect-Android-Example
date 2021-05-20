@@ -5,14 +5,14 @@
 
 ## Introduction
 
-  This guide provides the instructions to integrate FriendlyScore Android SDK Connect.
+Here you can find instructions on how to integrate and use FriendlyScore Connect for Android.
 
-  You will want to [Sign-up](https://friendlyscore.com/login) and obtain your `client_id` to get started.
+To get started quickly with FriendlyScore Connect for Android, clone the GitHub repository and run the example. You will need to [sign-up](https://friendlyscore.com/getting-started) for the free API keys through our Developer Console.
 
 ## Requirements
 
   - Install or update Android Studio to version 3.2 or greater
-  - FriendlyScore `client_id`
+  - [FriendlyScore Client Id](https://friendlyscore.com/company/keys)
   - We support Android 5.0 and above
 
 ## QuickStart

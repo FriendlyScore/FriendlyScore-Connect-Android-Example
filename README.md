@@ -248,7 +248,7 @@ The `onActivityResult` is called when the SDK is closed. The `data` object retur
 
 ### Access to Production Environment
 
-You can continue to integrate FriendlyScore Connect in your app in our sandbox environment. Once you have completed testing, you can request access to the production environment in the developer console or speak directly to your account manager.
+You can continue to integrate FriendlyScore Connect in your app in our sandbox environment. Once you have completed testing, you can access the production environment in the developer console.
 
 ### Support 
 

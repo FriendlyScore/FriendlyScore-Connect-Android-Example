@@ -19,7 +19,7 @@ To get started quickly with FriendlyScore Connect for Android, clone the GitHub 
 ## QuickStart
   The easiest way to get started is to clone the repository https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example. Please follow the instructions below to provide the necessary configuration and to understand the flow.
 
-# **Getting Set up**
+## **Getting Set up**
 
 #### Add the following values to your Project Level build.gradle file
   In your project-level Gradle file (build.gradle), add rules to include the Android Gradle plugin. The version should be equal to or greater than `3.2.1`
@@ -66,7 +66,7 @@ To get started quickly with FriendlyScore Connect for Android, clone the GitHub 
        implementation 'com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.21'
     }
 
-# **Integrating with FriendlyScore**
+## **Integrating with FriendlyScore**
   
 #### **Start FriendlyScore**
   In order to start FriendlyScore for your user you must have the `userReference` for that user. The `userReference` uniquely identifies the user in your systems. This `userReference` can then be used to access information from the FriendlyScore [api](https://developers.friendlyscore.com).

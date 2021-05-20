@@ -70,7 +70,7 @@
 #### **Start FriendlyScore**
   In order to start FriendlyScore for your user you must have the `userReference` for that user. The `userReference` uniquely identifies the user in your systems. This `userReference` can then be used to access information from the FriendlyScore [api](https://developers.friendlyscore.com).
 
-    public String userReference = "your_user_reference";
+    public String userReference = "YOUR_USER_REFERENCE";
 
   In order to listen when the user returns from the FriendlyScoreView in your `onActivityResult`, you must provide the `requestcode` that you will be using
 
@@ -80,7 +80,7 @@
 
   | Environment |   Description |
   | :----       | :--             |
-  | sandbox     | Use this environment to test your integration with Unlimited API Calls |
+  | sandbox     | Use this environment to test your integration |
   | production  | Production API environment |
 
 These environments are listed in the SDK as below

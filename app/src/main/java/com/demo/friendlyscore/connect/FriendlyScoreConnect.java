@@ -44,14 +44,14 @@ public class FriendlyScoreConnect extends AppCompatActivity {
     /**
      Create the theme variable that you want to use for the ConnectUi
      */
-    public final int connectUITheme = R.style.CustomConnectLightTheme;
+    public final int connectUITheme = R.style.ConnectDarkTheme;
 
 
     /**
         Show Only Icon for Back Button
 
     */
-    Boolean showOnlyIconBackButton = false;
+    Boolean showOnlyIconBackButton = true;
 
     /**
        Text Label for Back Button

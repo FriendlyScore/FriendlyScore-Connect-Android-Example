@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-    api ('com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.20'){
+    api ('com.github.friendlyscore.fs-android-sdk:friendlyscore-connect:1.0.21'){
         changing=true
     }
 

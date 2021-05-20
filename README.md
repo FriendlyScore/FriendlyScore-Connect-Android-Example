@@ -68,7 +68,7 @@ To get started quickly with FriendlyScore Connect for Android, clone the GitHub 
 
 ## **Integrating with FriendlyScore**
   
-#### **Start FriendlyScore**
+### **Start FriendlyScore**
   In order to start FriendlyScore for your user you must have the `userReference` for that user. The `userReference` uniquely identifies the user in your systems. This `userReference` can then be used to access information from the FriendlyScore [api](https://developers.friendlyscore.com).
 
     public String userReference = "YOUR_USER_REFERENCE";
@@ -140,7 +140,6 @@ The existing themes for `Connect` are declared below
 
     /**
             Force App to start with Browser flow (Default set to browser flow)
-
     */
     public Boolean forceBrowserFlow = false
 

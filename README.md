@@ -12,8 +12,9 @@ To get started quickly with FriendlyScore Connect for Android, clone the GitHub 
 ## Requirements
 
   - Install or update Android Studio to version 3.2 or greater
+  - We support Android 5.0 and greater
   - [FriendlyScore Client Id](https://friendlyscore.com/company/keys)
-  - We support Android 5.0 and above
+
 
 ## QuickStart
   The easiest way to get started is to clone the repository https://github.com/FriendlyScore/FriendlyScore-Connect-Android-Example. Please follow the instructions below to provide the necessary configuration and to understand the flow.

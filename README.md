@@ -133,7 +133,6 @@ The existing themes for `Connect` are declared below
 
     /**
        Text Label for Back Button
-
     */
     public String backButtonLabel = "Back"
 

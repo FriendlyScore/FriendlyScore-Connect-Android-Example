@@ -108,7 +108,7 @@ You must extend the Default theme while creating the custom theme
 
 
     <style name="CustomConnectDarkTheme" parent="ConnectDarkTheme">
-
+      
     </style>
 
 
@@ -118,7 +118,6 @@ The existing themes for `Connect` are declared below
     /**
         Connect Light Theme - R.style.ConnectLightTheme
         Connect Dark Theme - R.style.ConnectDarkTheme
-
     */
     public int connectUITheme = R.style.ConnectLightTheme
 

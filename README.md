@@ -131,7 +131,6 @@ The existing themes for `Connect` are declared below
 
     public Boolean showOnlyIconBackButton = false
 
-
     /**
        Text Label for Back Button
 

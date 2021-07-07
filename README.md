@@ -30,6 +30,17 @@ To get started quickly with FriendlyScore Connect for Android, clone the GitHub 
             classpath 'com.android.tools.build:gradle:3.2.1'
         }
     }  
+    
+    
+    allprojects {
+        
+        repositories {
+            
+            maven {
+                url "https://jitpack.io"
+            }
+        }
+    }
 ### **FriendlyScore Configuration**
    
 #### **Add FriendlyScore Android Framework configuration to your app**
@@ -114,14 +125,12 @@ You must extend the Default theme while creating the custom theme
 
 The existing themes for `Connect` are declared below
 
-```
+
     /**
         Connect Light Theme - R.style.ConnectLightTheme
         Connect Dark Theme - R.style.ConnectDarkTheme
     */
     public int connectUITheme = R.style.ConnectLightTheme
-
-```
 
 #### Other
     /**
@@ -133,7 +142,7 @@ The existing themes for `Connect` are declared below
        Text Label for Back Button
     */
     public String backButtonLabel = "Back"
-    
+
     /**
             Force App to start with Browser flow (Default set to browser flow)
     */
